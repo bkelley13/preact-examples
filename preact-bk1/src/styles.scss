@@ -1,5 +1,11 @@
 $primary-color: white;
 $secondary-color: blue;
+$button-color: #4CAF50;
+$tertiary-color: #ff0000;
+
+:root {
+  --test-color: #FFFF00;
+}
 
 body {
   color: $primary-color;
@@ -14,3 +20,18 @@ header {
     }
   }
 }
+
+button {
+  border: none;
+  color: var(--test-color);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight:  bolder;
+  margin: 4px 2px;
+  cursor: pointer;
+  background-color: #4CAF50;
+}
+

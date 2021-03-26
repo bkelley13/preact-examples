@@ -1,5 +1,7 @@
+import "preact/debug";
 import { h, render } from 'preact';
 import { Router } from 'preact-router';
+import BkButton from './bkbutton';
 import Greeter from './bktest';
 import './styles.scss';
 
@@ -24,7 +26,8 @@ const App = () => (
     <Header />
     <h1>Hello from Preact and Typescript!</h1>
     <Greeter name="Bob" from="Oracle"/>
-    
+    <BkButton label="Click me"></BkButton>   
+    <button>Try it</button> 
 
     <Router>
       <Home path="/" />
